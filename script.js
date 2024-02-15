@@ -144,25 +144,44 @@ function showResult() {
     const scorePopup = result_box.querySelector(".score_popup");
 
     if (userScore === 0) {
-        scoreText.textContent = "Congrats, Musicaholics. Your drink are";
-        scorePopup.innerHTML = '<img src="1.PNG" alt="Score 0 Image"><div class="score_description">Soft Seltzer</div>';
+        scoreText.textContent = "Congrats, Musicaholics. Your drink is";
+        scorePopup.innerHTML = `
+            <img src="1.PNG" alt="Score 0 Image">
+            <div class="score_description">Soft Seltzer</div>
+            <div class="score_subtext">Your grooving in, yet still sober.</div>`;
     } else if (userScore === 1 || userScore === 2) {
-        scoreText.textContent = "Congrats, Musicaholics. Your drink are";
-        scorePopup.innerHTML = '<img src="1.PNG" alt="Score 1 Image"><div class="score_description">Soft Seltzer</div>';
+        scoreText.textContent = "Congrats, Musicaholics. Your drink is";
+        scorePopup.innerHTML = `
+            <img src="1.PNG" alt="Score 1 Image">
+            <div class="score_description">Soft Seltzer</div>
+            <div class="score_subtext">Your grooving in, yet still sober.</div>`;
     } else if (userScore <= 4) {
-        scoreText.textContent = "Congrats, Musicaholics. Your drink are";
-        scorePopup.innerHTML = '<img src="2.PNG" alt="Score 2 Image"><div class="score_description">Aperol Spritz</div>';
+        scoreText.textContent = "Congrats, Musicaholics. Your drink is";
+        scorePopup.innerHTML = `
+            <img src="2.PNG" alt="Score 2 Image">
+            <div class="score_description">Aperol Spritz</div>
+            <div class="score_subtext">Music is going through you, you're getting a little tipsy.</div>`;
     } else if (userScore <= 6) {
-        scoreText.textContent = "Congrats, Musicaholics. Your drink are";
-        scorePopup.innerHTML = '<img src="3.PNG" alt="Score 3 Image"><div class="score_description">Margarita</div>';
+        scoreText.textContent = "Congrats, Musicaholics. Your drink is";
+        scorePopup.innerHTML = `
+            <img src="3.PNG" alt="Score 3 Image">
+            <div class="score_description">Margarita</div>
+            <div class="score_subtext">You're having fun as much as getting drunk in music!</div>`;
     } else if (userScore <= 8) {
-        scoreText.textContent = "Congrats, Musicaholics. Your drink are";
-        scorePopup.innerHTML = '<img src="4.PNG" alt="Score 4 Image"><div class="score_description">Saverac</div>';
+        scoreText.textContent = "Congrats, Musicaholics. Your drink is";
+        scorePopup.innerHTML = `
+            <img src="4.PNG" alt="Score 4 Image">
+            <div class="score_description">Sazerac</div>
+            <div class="score_subtext">It's visible that you're already drunk and can't seem to stop taking in that tune.</div>`;
     } else {
-        scoreText.textContent = "The one true Musicaholics!, here's your drink";
-        scorePopup.innerHTML = '<img src="5.PNG" alt="Score 5 Image"><div class="score_description">Aunt Roberta</div>';
+        scoreText.textContent = "The one true Musicaholics! Here's your drink";
+        scorePopup.innerHTML = `
+            <img src="5.PNG" alt="Score 5 Image">
+            <div class="score_description">Aunt Roberta</div>
+            <div class="score_subtext">You're a true Musicaholic, extremely drunk and is dying!!!</div>`;
     }
 }
+
 
 
 
